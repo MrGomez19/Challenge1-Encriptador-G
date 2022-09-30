@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/indexStyle.css">
+    </head>
+
+    <body> 
+        <header>
+            <img id="logo" src="Material/Logo-blanco.png" alt="Logo Alura">
+        </header>
+
+        <main>
+            <section class="input">
+                <textarea id="text0" cols="120" rows="6" placeholder="Type your text here"></textarea>
+            </section>
+
+            <section class="action">
+                <div class="note">
+                    &#9888; Just use lowercase letters and without accents.
+                </div>
+
+                <div class="buttons">
+                    <a href="#" id="En" onclick="encrypt()">Encrypt</a>
+                    <a href="#" id="De" onclick="decrypt()">Decrypt</a>
+                </div>
+            </section>
+            
+            <section class="output">
+                <textarea id="result" cols="120" rows="20" readonly placeholder="Ningun mensaje fue encontrado."></textarea>
+
+                <a href="#" id="copyB" onclick="copy()">Copy</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy Created by MrGomez / Alura-Latam</p>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/juan-gomez-7554a1218/"><img  class="contactIcons" src="Material/LinkedIn_logo_initials.png" alt="Logo Linkedin"></a>
+                <a href="https://github.com/MrGomez19"><img class="contactIcons" src="Material/Github_logo.png" alt="Logo Git-hub"></a>
+                <a href="mailto:jgomez19996@gmail.com"><img class="contactIcons" src="Material/mail-logo.png" alt="Mail Logo"></a>
+        </div>
+
+        </footer>
+
+        <script defer src="program.js"></script>
+    </body>
+</html>

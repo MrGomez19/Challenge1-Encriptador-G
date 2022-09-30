@@ -1,0 +1,319 @@
+body{
+    background: url(img/Background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    background-color: transparent;
+}
+header #logo{
+    height: 56px;
+    width: auto;
+    margin: 40px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s all;
+}
+header #logo:hover{
+    background-color: #0A3871;
+    border-radius: 50%;
+}
+
+
+.input{
+    background-color: transparent;
+    width: 65%;
+    height: auto;
+    margin: 0 1%;
+}
+.input #text0{
+    margin: 5%;
+    max-width: 95%;
+
+    background-color: transparent;
+    border: none;
+    resize: none;
+
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #d7d8e2;
+}
+::placeholder{
+    color: #c3c5d4;
+    opacity: 50%;
+}
+.input #text0:focus {
+    background-color: transparent;
+    outline: none !important;
+    border:1px solid transparent;
+}
+
+
+.output{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+
+    background: url(img/gray-texture.png);
+    border: transparent;
+    border-radius: 3em;
+    width: 25%;
+    height: 90%;
+    margin: 0 1%;
+}
+.output #result{
+    margin: 5%;
+    max-width: 90%;
+    max-height: 85%;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #d7d8e2;
+
+    background-color: transparent;
+    background-image: url(img/no-text-image.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    border: none;
+    resize: none;
+}
+.output #result:focus {
+    outline: none !important;
+    border:1px solid transparent;
+}
+.output #copyB{
+    display: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    width: 70%;
+    margin: 0 15%;
+    height: auto;
+    padding: 0.8em 0;
+    background-color: #2d325a;
+    color: #888ba9;
+    border: 1px solid #888ba9;
+    border-radius: 15px;
+    transition: 0.7s all;
+    cursor: pointer;
+}
+.output #copyB:hover{
+    background-color: #383e70;
+    border: 1px solid white;
+    color: white;
+}
+.output #copyB:active{
+    font-size: smaller;
+}
+
+
+.action{
+    background-color: transparent;
+    width: 70%;
+    height: auto;
+    margin: 0 1% 2em 1%;
+}
+.note{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin: 1em 0 0 13.5em;
+}
+.buttons{
+    margin: 1em  0 0 10em;
+}
+.buttons a{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    display: inline-block;
+    margin-right: 5%;
+    width: 30%;
+    height: auto;
+    padding: 0.8em 0;
+    background-color: #2d325a;
+    color: #888ba9;
+    border: 1px solid #888ba9;
+    border-radius: 15px;
+    transition: 0.7s all;
+    cursor: pointer;
+}
+.buttons a:hover{
+    background-color: #383e70;
+    border: 1px solid white;
+    color: white;
+}
+.buttons a:active{
+    font-size: smaller;
+}
+
+
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 0.5em;
+    background-color: #383e70;
+}
+footer p{  
+    display: inline-block;  
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F3F5FC;
+
+    vertical-align: center;
+    width: 75%;
+    height: 3em;
+    margin: 1em;
+}
+.icon-container{
+    display: inline-block;
+    vertical-align: center;
+    width: 17%;
+    margin: 1em;
+    height: 3em;
+}
+.contactIcons{
+    width: auto;
+    height: 80%;
+    margin: 0 0.5em;
+}
+
+
+
+@media screen and (max-width:1150px) {
+    .input{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .action{
+        width: 95%;
+        margin: 5% auto;
+    }
+    .note{
+        text-align: center;
+        margin: 1% auto;
+    }
+    .buttons{
+        width: 70%;
+        margin: 2% auto;
+    }
+    .buttons a{
+        display: inline-block;
+        margin: 3%  5%;
+        width: 39%;
+    }
+    .output{
+        display: block;
+        position: static;
+        top: 0;
+        right: 0;
+        margin: 2% auto;
+        width: 90%;
+        height: 800px;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    footer p{  
+        display: block;  
+        width: 95%;
+        height: auto;
+        margin: 2% auto;
+    }
+    .icon-container{
+        display: block;
+        width: 13%;
+        margin: 2% auto;
+        height: 1.5em;
+    }
+    .contactIcons{
+        width: auto;
+        height: 80%;
+        margin: 0 4%;
+    }
+}
+
+
+
+@media screen and (max-width:670px) {
+    .input{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .action{
+        width: 95%;
+        margin: 5% auto;
+    }
+    .note{
+        margin: 1% auto;
+        text-align: center;
+    }
+    .buttons{
+        margin: 2% auto;
+    }
+    .buttons a{
+        display: block;
+        margin: 3% auto;
+        width: 80%;
+    }
+    .output{
+        display: block;
+        position: static;
+        top: 0;
+        right: 0;
+        margin: 2% auto;
+        width: 90%;
+        height: 500px;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    footer p{  
+        display: block;  
+        width: 95%;
+        height: auto;
+        margin: 2% auto;
+    }
+    .icon-container{
+        display: block;
+        width: 30%;
+        margin: 2% auto;
+        height: 1.5em;
+    }
+    .contactIcons{
+        width: auto;
+        height: 80%;
+        margin: 0 2%;
+    }
+}
