@@ -240,6 +240,9 @@ footer p{
         width: 90%;
         height: 800px;
     }
+    .output #result{
+        max-height: 80%;
+    }
     footer{
         width: 100%;
         height: auto;
@@ -294,6 +297,9 @@ footer p{
         margin: 2% auto;
         width: 90%;
         height: 500px;
+    }
+    .output #result{
+        max-height: 80%;
     }
     footer{
         width: 100%;
